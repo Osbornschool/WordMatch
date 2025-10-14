@@ -1,13 +1,14 @@
 public class WordMatch {
+
     private String secret;
 
-    public int scoreGuess(String guess) {
-
-        return 0;
+    public WordMatch(String word) {
+        secret = word;
     }
 
-    public WordMatch(String word) {
-
+    public int scoreGuess(String guess) {
+    int score = 0;
+        return score;
     }
 
     public String findBetterGuess(String guess1, String guess2) {
