@@ -30,7 +30,7 @@ public class Main {
 
     while(s.hasNextLine()){
         Scanner w = new Scanner(f);
-        p = (w.next);
+        p = (w.);
         }
         return 0;
     }
