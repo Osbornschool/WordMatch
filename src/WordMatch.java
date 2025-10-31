@@ -25,5 +25,8 @@ public class WordMatch {
             return "equal";
         }
     }
+    public int findBetterGuessValue(String guess1, String guess2) {
+       return Math.max(scoreGuess(guess1), scoreGuess(guess2));
+    }
 }
 

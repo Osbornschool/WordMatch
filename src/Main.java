@@ -1,5 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.File;
+import java.nio.channels.WritePendingException;
 import java.util.Scanner;
 
 public class Main {
@@ -21,17 +22,27 @@ public class Main {
 //        System.out.println(game.scoreGuess("cat"));
 //        System.out.println(game.findBetterGuess("con", "cat"));
 
-    public static int read() throws FileNotFoundException{
-    File f = new File("Guesses.txt");
-    Scanner s = new Scanner(f);
-    int index = 0;
-    int counter = 0;
-    String p = "placeholder";
+    public static String read() throws FileNotFoundException {
+        File f = new File("Guesses.txt");
+        Scanner s = new Scanner(f);
+        int index = 0;
+        int counter = 0;
+        String a = "placeholder1";
+        String b = "placeholder2";
+        String c = "placeholder3";
+//        String d = "placeholder4";
+        a = (s.next());
+        b = (s.next());
+        c = (s.next());
+//        d = (s.next());
+        WordMatch w = new WordMatch(a);
+        System.out.println(w.findBetterGuessValue(a,c));
 
-    while(s.hasNextLine()){
-        Scanner w = new Scanner(f);
-        p = (w.);
-        }
-        return 0;
+        return a+" "+b+" "+c;
     }
-}
+//        while(s.hasNextLine()){
+//
+//        a = (s.next());
+//        }
+//        return a;
+    }
