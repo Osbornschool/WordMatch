@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws FileNotFoundException{
+    public static void main(String[] args) throws FileNotFoundException {
         System.out.println(read());
     }
 //        WordMatch w = new WordMatch("mississippi");
@@ -27,22 +27,17 @@ public class Main {
         Scanner s = new Scanner(f);
         int index = 0;
         int counter = 0;
-        String a = "placeholder1";
-        String b = "placeholder2";
-        String c = "placeholder3";
-//        String d = "placeholder4";
-        a = (s.next());
-        b = (s.next());
-        c = (s.next());
-//        d = (s.next());
-        WordMatch w = new WordMatch(a);
-        System.out.println(w.findBetterGuessValue(a,c));
-
-        return a+" "+b+" "+c;
+        while (s.hasNext()) {
+            String a = "placeholder1";
+            String b = "placeholder2";
+            String c = "placeholder3";
+            a = (s.next());
+            b = (s.next());
+            c = (s.next());
+            WordMatch w = new WordMatch(a);
+            System.out.println(w.findBetterGuessValue(a, c));
+            
+        }
+        return "WIP";
     }
-//        while(s.hasNextLine()){
-//
-//        a = (s.next());
-//        }
-//        return a;
-    }
+}
